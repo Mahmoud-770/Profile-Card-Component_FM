@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    letter-spacing: .5px;
+    overflow: hidden;
+    margin: 0;padding: 0;
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+body{
+    background: hsl(185, 75%, 39%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* * * * * BACKGROUND PATTERNS * * * * */
+img:nth-child(1){
+    position: absolute;
+    left: -30%;
+    top: -60%;
+    z-index: -1;
+}
+img:nth-child(2){
+    position: absolute;
+    right: -30%;
+    bottom: -60%;
+    z-index: -1;
+}
+
+
+
+/* * * * * MAIN SECTION * * * * */
+.card{
+    height: 400px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 10px 10px 20px 5px hsl(185, 75%, 39%);
+    border-radius: 20px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* * * * * MAIN BACKGROUND * * * * */
+.card .cover{
+    width: 100%;
+    height: 40%;
+    background-image: url(images/bg-pattern-card.svg);
+}
+
+
+
+/* * * * * MAIN PROFILE PIC * * * * */
+.card .pic{
+    position: absolute;
+    top: 110px;
+    left: 127px;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-size: cover;
+    background-image: url(images/image-victor.jpg);
+}
+
+
+
+/* * * * * PERSONAL INFORMATION * * * * */
+.info{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.info .name{
+    font-weight: 700;
+}
+.info .name span{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.info .city{color: hsl(0, 0%, 59%);}
+
+
+
+/* * * * * G R A Y - L I N E * * * * */
+.line{
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    background: hsl(0, 0%, 59%);;
+}
+
+
+
+/* * * * * DETAILS INFORMATION * * * * */
+.nums{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nums div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nums div{
+    font-weight: 700;
+}
+.nums div span{
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+}
